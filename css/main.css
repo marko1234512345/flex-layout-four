@@ -2,9 +2,12 @@
 	font-family: 'Wisdom Script';
 	src: url('../fonts/wisdom-script.otf') format('opentype');
 }
-
+html {
+    font-size:16px;
+}
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size:1em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -12,10 +15,12 @@ body {
 
 .container{
 	max-width: 1200px;
+	width: 90%;
 	margin: 0 auto;
 	display: flex;
   justify-content: center;
   align-items: center;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -27,33 +32,35 @@ h4 {
 	font-weight: 700;
 }
 h1 {
-	font-size: 30px;
+	font-size: 1.875em;
 }
 h2 {
-    font-size: 24px;
+    font-size: 1.5em;
 }
 h3 {
-	font-size: 18px;
+	font-size: 1.125em;
 }
 h4 {
-	font-size: 12px;
+	font-size: 0.75em;
 }
 
 p {
-	font-size: 14px;
+	font-size: 0.875em;
 	line-height: 21px;
     padding: 0 30px;
 }
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
+
 
 header h1 {
 	float: left;
@@ -65,8 +72,8 @@ header h1 span {
 }
 
 header nav {
-	float: right;
-	padding: 46px 0;
+    padding: 20px 0;
+    width: 100%;
 }
 header nav ul {
 	margin: 0;
@@ -77,7 +84,7 @@ header nav ul li {
 	font-weight: 700;
 	font-size: 14px;
 	padding: 0 10px;
-	display: inline;
+	list-style: none;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -92,6 +99,7 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 
 .main-image {
@@ -114,16 +122,14 @@ header nav ul li a{
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 25px;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-	height: auto;
-	float: left;
+	width: 100%;
 	border-top: 1px solid #eee;
 }
 
@@ -152,12 +158,12 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 21px;
 }
 
 .address {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 24px;
 }
 
@@ -171,10 +177,11 @@ footer {
 	display: flex;
   justify-content: center;
   align-items: center;
+	flex-flow: row wrap;
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: 0.875em;
 }
