@@ -63,7 +63,7 @@ header {
 
 
 header h1 {
-	float: left;
+	width: 100%;
 	margin: 0;
 	padding: 38px 0;
 }
@@ -94,8 +94,6 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
-	margin: 0 auto;
-	clear: both;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -104,7 +102,7 @@ header nav ul li a{
 
 .main-image {
 	height: auto;
-	float: left;
+	width: 100%;
 }
 .main-image img {
 	width: 100%;
@@ -113,7 +111,7 @@ header nav ul li a{
 
 .main-title {
 	height: auto;
-	float: left;
+
 }
 .main-title h3 {
 	text-align: left;
@@ -133,14 +131,14 @@ header nav ul li a{
 	border-top: 1px solid #eee;
 }
 
+.section-one {margin-left: 30px;}
+
 .section-one h4 {
-	padding: 10px 0;
+	padding: 10px 0 0;
+
 }
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
+
 
 .section-two h4,
 .section-three h4 {
@@ -169,11 +167,11 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
+
 	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
+
 	text-align: center;
+	width: 100%;
 	display: flex;
   justify-content: center;
   align-items: center;
